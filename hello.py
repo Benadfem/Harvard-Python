@@ -5,5 +5,5 @@
 name = input("What's your name? ")
 
 #Say Hello to User!
-print("Hello,", end=" ")
-print(name)
+# Added the F string formatting 
+print(f"Hello, {name}")
