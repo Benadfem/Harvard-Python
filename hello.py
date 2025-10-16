@@ -1,8 +1,8 @@
 #Passing argument to function by 
 # telling the user to input thier name
 
-#Ask the user for thier name
-name = input("What's your name? ")
+#Ask the user for thier name and removing the white spaces and Capitalizing the name
+name = input("What's your name? ").strip().title()
 
 #Say Hello to User!
 # Added the F string formatting 
