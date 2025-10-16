@@ -5,4 +5,5 @@
 name = input("What's your name? ")
 
 #Say Hello to User!
-print("Hello,", name)
+print("Hello,", end=" ")
+print(name)
