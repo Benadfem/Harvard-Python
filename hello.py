@@ -1,12 +1,6 @@
-#Passing argument to function by 
-# telling the user to input thier name
+# writing hello program to be done using function 
+def hello(to):
+    print(f"Hello, {to}")
 
-#Ask the user for thier name and removing the white spaces and Capitalizing the name
-name = input("What's your name? ").strip().title()
-
-
-#Greeting the usser only with the first name 
-first, last =name.split()
-#Say Hello to User!
-# Added the F string formatting 
-print(f"Hello, {first}")
+name = input("What's your name> ")
+hello(name)
