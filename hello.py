@@ -2,7 +2,7 @@
 def main():
     # call the function to action and adding the name of the user 
     name = input("What's your name> ")
-    greeting = hello(name) + " How are you doing today "
+    greeting = hello(name) + " How are you doing today?"
     print(greeting)
 
 
