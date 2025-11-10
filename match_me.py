@@ -1,9 +1,26 @@
-#this project pratice the use of Match and case
-name = input("Who do you want to say hi to? ")
+def main():
+    user_input = input("Write your expression ")
 
-#now we can use the match case now
-match name:
-    case "Benson":
-        print(f"welcome The Chairman")
-    case _:
-        print(f"You are not the chairman {name}")
+    x, y, z = user_input.split( )
+    x = float (x)
+    z = float(z)
+
+    print(match_me(x, y, z))
+
+def match_me (a , b , c):
+    # global answer
+    match b:
+        case "+":
+            answer = a + c
+        case "-":
+            answer = a - c
+        case "*" :
+            answer = a * c
+        case "/" :
+            answer = a / c
+        case _ :
+            answer = 'Enter valid arithemtic symbol '
+    return f"{answer:.1f}"
+
+
+main()
