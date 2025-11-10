@@ -23,4 +23,5 @@ def match_me (a , b , c):
     return f"{answer:.1f}"
 
 
-main()
+if __name__ == "__main__":
+    main()
