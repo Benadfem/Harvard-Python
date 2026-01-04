@@ -8,18 +8,19 @@ questions=("Which symbol is used in Python 3.14 to define a comment?",
           "Python 3.14 improved which feature to make debugging AI logic significantly easier for developers?",
           )
 options=(("(A) //" , "(B) /* */" , "(C) #" ,"(D) $"),
-         ("(A) Tuple" , "(B)List" , "(C)String"  "(D)Float"),
+         ("(A) Tuple" , "(B) List" , "(C) String"  "(D) Float"),
          ( "(A) Free-threading (No-GIL)",
            "(B) Multi-processing",
            "(C) JIT Compiler",
            "(D) Type Hinting"),
          ("(A) wait" , "(B) defer" , "(C) yield" , "(D) await"),
          ("(A) Pandas" , "(B) Numpy" , "(C) Pydantic" , "(D) Scikit-Learn"),
-         ("(A) Variable naming" ," (B) Error message hints" , "(C) File saving" , "(D) Screen brightness")
+         ("(A) Variable naming" ,"(B) Error message hints" , "(C) File saving" , "(D) Screen brightness")
          )
 answers=("C", "B", "A", "D", "C", "B" )
-correct_answers=[]
-option_index=0
+guesses=[]
+option_index= 0
+score = 0
 
 #give the count of the questions
 count = 0
@@ -29,6 +30,14 @@ for question in questions:
     print(f"{count}. {question}")
     for option in options[option_index]:
         print(option)
+
+     #now let's select the chosen options
+    guess = input("choose from the options 'A-D': ")
+    guesses.append(guess)
+    option_index+=1
+
+    #check if the chosen option is correct
+
 
 
 
