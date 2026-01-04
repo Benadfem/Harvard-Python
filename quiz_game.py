@@ -17,7 +17,7 @@ options=(("(A) //" , "(B) /* */" , "(C) #" ,"(D) $"),
          ("(A) Pandas" , "(B) Numpy" , "(C) Pydantic" , "(D) Scikit-Learn"),
          ("(A) Variable naming" ," (B) Error message hints" , "(C) File saving" , "(D) Screen brightness")
          )
-answers=("C", "B", "A", "D", "C", "B")
+answers=("C", "B", "A", "D", "C", "B" )
 correct_answers=[]
 option_index=0
 
