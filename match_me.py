@@ -9,6 +9,7 @@ def main():
 
 def match_me (a , b , c):
     # global answer
+    global answer
     match b:
         case "+":
             answer = a + c
