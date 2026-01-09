@@ -49,18 +49,31 @@ def main():
         print("4. Exit")
         print("*****************")
         choice = input("Enter your choice: ")
-        if choice == "1":
-           show_balance()
-        elif choice == "2":
-            balance += deposit()
-        elif choice == "3":
-            balance -= withdraw()
-        elif choice == "4":
-            break
-        else:
-            print("*****************")
-            print("You Entered Invalid Choice")
-            print("*****************")
+        # if choice == "1":
+        #    show_balance()
+        # elif choice == "2":
+        #     balance += deposit()
+        # elif choice == "3":
+        #     balance -= withdraw()
+        # elif choice == "4":
+        #     break
+        # else:
+        #     print("*****************")
+        #     print("You Entered Invalid Choice")
+        #     print("*****************")
+        match choice:
+            case "1":
+                show_balance()
+            case "2":
+                balance += deposit()
+            case "3":
+                balance -= withdraw()
+            case "4":
+                break
+            case _:
+                print("*****************")
+                print("You Entered Invalid Choice")
+                print("*****************")
 
     print("*****************")
     print("Bye and Have a nice day!")
