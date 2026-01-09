@@ -26,9 +26,13 @@ while is_running:
         elif guess > guess_number:
             print("Your guess is too high")
             print("Try again!")
+            print(f"Select a number from {lowest_number} to {highest_number}")
+
         elif guess < guess_number:
             print("Your guess is too low")
             print("Try again!")
+            print(f"Select a number from {lowest_number} to {highest_number}")
+
         else:
             print("--------- CORRECT  GUESS---------")
             print(f"The correct guess is {guess}")
@@ -37,5 +41,7 @@ while is_running:
 
     else:
         print("The guess must be a number ")
+        print(f"Select a number from {lowest_number} to {highest_number}")
+
 
 
